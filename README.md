@@ -74,7 +74,7 @@ npm start
 
 ## Environment Variables
 
-Create `.env` file (optional):
+Create `.env` file:
 ```
 MONGODB_URI=mongodb://localhost:27017/recipe-sharing
 PORT=3000
