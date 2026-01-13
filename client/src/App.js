@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_URL = '/api';
+const API_URL = 'https://recipe-sharing-platform-sxt1.onrender.com';
 
 function App() {
   const [activeTab, setActiveTab] = useState('browse');
