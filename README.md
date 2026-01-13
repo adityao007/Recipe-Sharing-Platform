@@ -24,7 +24,17 @@ A recipe sharing app where you can browse, submit, rate and comment on recipes. 
 npm install
 ```
 
-2. Make sure MongoDB is running on your machine
+2. Environment Variables (.env file)
+   Create `.env` file:
+    for local 
+      ```
+      MONGODB_URI=mongodb://localhost:27017/recipe-sharing
+      ```
+    for atlas 
+      ```
+      MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/RecipeSharingPlatform
+
+      ```
 
 3. (Optional) Seed the database:
 ```bash
@@ -72,10 +82,4 @@ npm start
 - POST /api/recipes/:id/comment - Add comment
 - GET /api/categories - Get all categories
 
-## Environment Variables
 
-Create `.env` file:
-```
-MONGODB_URI=mongodb://localhost:27017/recipe-sharing
-PORT=3000
-```
